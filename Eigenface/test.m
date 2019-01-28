@@ -3,7 +3,7 @@ clc;
 
 meanFacemat = load('meanFace.mat');
 meanFace = meanFacemat.meanFace;
-% figure, imshow(uint8(meanFace)), title('meanFace');
+figure, imshow(uint8(meanFace)), title('meanFace');
 compressedFeatureVecmat = load('compressedFeatureVec.mat');
 compressedFeatureVec = compressedFeatureVecmat.compressedFeatureVec;
 bigXmat = load('bigX.mat');
@@ -12,15 +12,15 @@ meanVector = meanVector.meanVector;
 bigX = bigXmat.bigX;
 [row, rep] = size(bigX);
 
-% figure,title('featureFace')
-% for i = 1:3
-%     for j = 1:3
-%         featureFaceVec = compressedFeatureVec((i - 1)*3 + j , :);
-%         featureFace = reshape(featureFaceVec, [100, 100]);
-%         subplot(3, 3, (i - 1)*3 + j);
-%         imshow(uint8(featureFace));
-%     end
-% end
+figure,title('featureFace')
+for i = 1:3
+    for j = 1:3
+        featureFaceVec = compressedFeatureVec((i - 1)*3 + j , :);
+        featureFace = reshape(featureFaceVec, [100, 100]);
+        subplot(3, 3, (i - 1)*3 + j);
+        imshow(uint8(featureFace));
+    end
+end
 
 % testImage = imread('./Yale2/training/subject15_5.bmp');
 % testSize = size(testImage);

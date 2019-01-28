@@ -1,4 +1,4 @@
-for i = 1:3
+for i = 4:4
     filename = int2str(i);
     file = strcat(filename, '.jpeg');
     oriImage = imread(file);
@@ -8,4 +8,12 @@ for i = 1:3
     save(maskpath, 'BW');
     imageSegmenter close
 end
+
+% for i = 1:7
+%     filename = int2str(i);
+%     file = strcat(filename, '.mat');
+%     mask = load(file);
+%     figure,imshow(mask.BW);
+% end
+    
     

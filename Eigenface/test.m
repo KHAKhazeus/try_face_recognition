@@ -62,11 +62,11 @@ for i = 1: 15
         compressedTest = compressedFeatureVec * testVec;
         minDistance = cos_distance(compressedX(:, 1), compressedTest);
         pos = 1;
-        for j = 1: rep
-            newDistance = cos_distance(compressedX(:, j), compressedTest);
+        for k = 1: rep
+            newDistance = cos_distance(compressedX(:, k), compressedTest);
             if newDistance < minDistance
                 minDistance = newDistance;
-                pos = j;
+                pos = k;
             end
         end
         guess = uint8(floor((pos - 1) /8) + 1);

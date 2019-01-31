@@ -3,7 +3,7 @@ clc;
 M = [113.834270 149.178237]'  ;
 Sigma = [34.8830   -7.4244
    -7.4244   81.4047];
-testImg = imread('test_4.jpeg');
+testImg = imread('test4.jpeg');
 figure,imshow(testImg),title('原始图像');
 ycbcrTestImg = rgb2ycbcr(testImg);
 oriImgSize = size(ycbcrTestImg);

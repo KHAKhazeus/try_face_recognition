@@ -1,2 +1,8 @@
 *.pdf
 pdf/
+NN/log/*
+NN/keras
+NN/log_cnn_orl
+*.local
+*.local
+NN/log/events.out.tfevents.1548847351.KhazeusMBP.local

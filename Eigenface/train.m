@@ -47,10 +47,11 @@ for i = matSize(1): -1 : 1
 end
 
 compressedSize = size(compressedFeatureVec);
+figure
 for j = 1: 15
     featureVec = uint8(compressedFeatureVec(j, :));
     featureFace = reshape(featureVec, [100, 100]);
-    figure, imshow(featureFace);
+    subplot(4,4,j),imshow(featureFace);
 end
 save('compressedFeatureVec.mat', 'compressedFeatureVec');
 save('bigX.mat', 'bigX');

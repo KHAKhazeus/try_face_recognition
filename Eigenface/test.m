@@ -13,7 +13,7 @@ bigX = bigXmat.bigX;
 [row, rep] = size(bigX);
 
 figure,title('featureFace')
-for i = 1:3
+for i = 1:3code
     for j = 1:3
         featureFaceVec = compressedFeatureVec((i - 1)*3 + j , :);
         featureFace = reshape(featureFaceVec, [100, 100]);

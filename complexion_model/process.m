@@ -55,18 +55,3 @@ for k = 1:rowSize
     end
 end
 hold off;
-% disk = strel('disk',2);
-% openBin=imopen(BinImg,disk);
-% figure,imshow(openBin),title('open')
-
-% [label, number] = bwlabel(openBin,4);
-% stats = regionprops(label,'basic');
-% centroids = cat(1, stats.Centroid);
-% figure,imshow(testImg),title('centroids')  
-% hold on
-% rects = cat(1,  stats.BoundingBox);
-% plot(centroids(:,1), centroids(:,2), 'b*'),
-% for i = 1:size(rects, 1)
-%         rectangle('position', rects(i, :), 'EdgeColor', 'r');  
-% end  
-% hold off

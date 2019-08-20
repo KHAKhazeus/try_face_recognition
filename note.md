@@ -293,6 +293,14 @@ RGB分布阈值 Multi-model tracking of faces for video communications
 
 
 
+模型精确度
+
+连通区域： imopen之后腐蚀扩展
+
+面积
+
+
+
 ## 基于AdaBoost的人脸检测
 
 ANN
